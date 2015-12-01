@@ -26,7 +26,7 @@ public class ParkFragment extends Fragment {
         parkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(view.getContext() , "park button pressed", Toast.LENGTH_SHORT);
+                Toast.makeText(ParkFragment.this.getActivity().getApplicationContext() , "park button pressed", Toast.LENGTH_SHORT);
             }
         });
         // Perform any camera updates here
