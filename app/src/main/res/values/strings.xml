@@ -5,9 +5,15 @@
     <string name="title_section1">Search</string>
     <string name="title_section2">Park</string>
     <string name="title_section3">Offers</string>
+<<<<<<< HEAD
     <string name="title_section4">Section4</string>
     <string name="title_section5">Section5</string>
     <string name="title_section6">Section6</string>
+=======
+    <string name="title_section4">TODO</string>
+    <string name="title_section5">TODO</string>
+    <string name="title_section6">TODO</string>
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -102,6 +108,7 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+<<<<<<< HEAD
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
@@ -161,6 +168,8 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+=======
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
 
 
 </resources>

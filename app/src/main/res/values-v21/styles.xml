@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <resources>
     <!-- your theme inherits from the material theme -->
@@ -13,3 +14,10 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 </resources>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+    </style>
+</resources>
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c

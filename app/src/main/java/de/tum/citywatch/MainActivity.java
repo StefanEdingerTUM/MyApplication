@@ -42,25 +42,37 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
+<<<<<<< HEAD
         Fragment fragment=null;
+=======
+        Fragment fragment;
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
         //TODO::
         if (position == 0) {
             fragment = new MapFragment();
         } else if (position == 1) {
             fragment = new ParkFragment();
+<<<<<<< HEAD
         } else if (position == 2) {
             fragment = new OffersFragment();
         }else if(position == 3){
            
+=======
+        } else { //if (position == 2) {
+            fragment = new OffersFragment();
+>>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
