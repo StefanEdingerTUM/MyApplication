@@ -4,11 +4,14 @@
     <string name="app_name">CityWatch</string>
     <string name="title_section1">Search</string>
     <string name="title_section2">Park</string>
-    <string name="title_section3">TODO</string>
+    <string name="title_section3">Offers</string>
+    <string name="title_section4">TODO</string>
+    <string name="title_section5">TODO</string>
+    <string name="title_section6">TODO</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_park">ParkActivity</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_park">Search</string>
+
 
 </resources>

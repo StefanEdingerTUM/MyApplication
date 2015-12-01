@@ -1,14 +1,11 @@
 package de.tum.citywatch;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
-import com.google.android.gms.maps.MapsInitializer;
-import com.google.android.gms.maps.OnMapReadyCallback;
 
 /**
  * A fragment that launches other parts of the demo application.
@@ -21,7 +18,7 @@ public class MapFragment extends com.google.android.gms.maps.MapFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_maps, container,
+        View view = inflater.inflate(R.layout.fragment_map, container,
                 false);
         mMapView = (MapView) view.findViewById(R.id.map);
         mMapView.onCreate(savedInstanceState);
