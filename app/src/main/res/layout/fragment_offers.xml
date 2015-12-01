@@ -140,7 +140,8 @@
                 android:text="Submit"
                 android:layout_weight="0.56"
                 android:background="@color/colorPrimary"
-                android:textColor="#ffffff" />
+                android:textColor="#ffffff"
+                android:enabled="true" />
 
         </LinearLayout>
 

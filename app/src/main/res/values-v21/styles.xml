@@ -1,5 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+    <!-- your theme inherits from the material theme -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <!--theme customizations -->
+
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.GreenStyle</item>
+    </style>
+
+
+    <style name="ActionBar.Solid.GreenStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 </resources>

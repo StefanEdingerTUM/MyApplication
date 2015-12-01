@@ -51,14 +51,16 @@ public class MainActivity extends Activity
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
-        Fragment fragment;
+        Fragment fragment=null;
         //TODO::
         if (position == 0) {
             fragment = new MapFragment();
         } else if (position == 1) {
             fragment = new ParkFragment();
-        } else { //if (position == 2) {
+        } else if (position == 2) {
             fragment = new OffersFragment();
+        }else if(position == 3){
+           
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
