@@ -22,13 +22,6 @@ public class ParkFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_park, container,
                 false);
         //TODO:: demo button action
-        parkButton = (Button) view.findViewById(R.id.parkButton);
-        parkButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ParkFragment.this.getActivity().getApplicationContext() , "park button pressed", Toast.LENGTH_SHORT);
-            }
-        });
         // Perform any camera updates here
         return view;
     }
