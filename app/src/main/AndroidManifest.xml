@@ -12,11 +12,7 @@
 
     <application
         android:allowBackup="true"
-<<<<<<< HEAD
         android:icon="@drawable/logo"
-=======
-        android:icon="@mipmap/ic_launcher"
->>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -42,7 +38,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
@@ -51,8 +46,6 @@
             android:name=".ScrollingActivity"
             android:label="@string/title_activity_scrolling" >
         </activity>
-=======
->>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
     </application>
 
 </manifest>

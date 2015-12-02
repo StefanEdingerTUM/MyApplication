@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -61,8 +60,6 @@
             </FrameLayout>
         </LinearLayout>
     </TabHost>
-=======
-    android:orientation="vertical">
 
     <SearchView
         android:layout_width="fill_parent"
@@ -79,5 +76,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
->>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
 </LinearLayout>

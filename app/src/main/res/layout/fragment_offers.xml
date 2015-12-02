@@ -140,12 +140,8 @@
                 android:text="Submit"
                 android:layout_weight="0.56"
                 android:background="@color/colorPrimary"
-<<<<<<< HEAD
                 android:textColor="#ffffff"
                 android:enabled="true" />
-=======
-                android:textColor="#ffffff" />
->>>>>>> b473f6d4c5f4667e2b88c041adc8bf897f21070c
 
         </LinearLayout>
 
