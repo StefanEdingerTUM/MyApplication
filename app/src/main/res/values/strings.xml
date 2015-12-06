@@ -2,10 +2,10 @@
 <resources>
 
     <string name="app_name">CityWatch</string>
-    <string name="title_section1">Search</string>
-    <string name="title_section2">Park</string>
-    <string name="title_section3">Offers</string>
-    <string name="title_section4">Section4</string>
+    <string name="title_section1">Find a space</string>
+    <string name="title_section2">Offer my space</string>
+    <string name="title_section3">My Offers</string>
+    <string name="title_section4">Scan</string>
     <string name="title_section5">Section5</string>
     <string name="title_section6">Section6</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

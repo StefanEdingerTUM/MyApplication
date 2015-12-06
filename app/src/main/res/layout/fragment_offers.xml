@@ -35,10 +35,11 @@
         android:layout_margin="20dp"
         android:layout_gravity="center_horizontal">
 
-        <TextView
+        <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:id="@+id/timeButton"
             android:layout_weight="0.33"
             android:text="Time"
             android:textStyle="bold"
