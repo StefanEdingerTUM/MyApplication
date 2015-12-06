@@ -27,11 +27,12 @@ public class MainActivity extends Activity
      */
     private CharSequence mTitle;
 
-    private Button parkButton;
+    public static FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fragmentManager = getFragmentManager();
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -51,7 +52,7 @@ public class MainActivity extends Activity
         Fragment fragment=null;
         //TODO::
         if (position == 0) {
-            fragment = new MapFragment();
+            fragment = new ParkMapFragment();
         } else if (position == 1) {
             fragment = new ParkFragment();
         } else if (position == 2) {
