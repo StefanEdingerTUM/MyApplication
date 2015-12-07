@@ -100,6 +100,10 @@ public class ParkFragment extends Fragment {
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
+
+                               MainActivity.fragmentManager.beginTransaction()
+                                        .replace(R.id.container, new OfferOverviewFragment())
+                                        .commit();
                                 dialog.dismiss();
 
                             }

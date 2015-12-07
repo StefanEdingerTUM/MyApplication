@@ -43,6 +43,8 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+
     }
 
     @Override
@@ -57,8 +59,10 @@ public class MainActivity extends Activity
             fragment = new ParkFragment();
         } else if (position == 2) {
             fragment = new OffersFragment();
-        } else { //if (position == 2) {
-            fragment = new OffersFragment();
+        } else if (position == 3) {
+            fragment = new OfferOverviewFragment();
+        } else {
+            fragment = new OfferOverviewFragment();
         }
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
@@ -77,7 +81,7 @@ public class MainActivity extends Activity
                 mTitle = getString(R.string.title_section3);
                 break;
             case 4:
-                mTitle = getString(R.string.title_section4);
+                mTitle = "Pending Offers";
                 break;
             case 5:
                 mTitle = getString(R.string.title_section5);

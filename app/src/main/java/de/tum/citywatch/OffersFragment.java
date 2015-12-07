@@ -1,7 +1,9 @@
 package de.tum.citywatch;
 
+import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,6 +58,33 @@ public class OffersFragment extends Fragment {
             public void onClick(View view) {
                 DialogFragment newFragment = new TimePickerFragment();
                 newFragment.show(getFragmentManager(), "timePicker");
+            }
+        });
+
+        Button submit = (Button) view.findViewById(R.id.Submit);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //DialogFragment newFragment = new TimePickerFragment();
+                // newFragment.show(getFragmentManager(), "timePicker");
+
+
+                AlertDialog alertDialog;
+                alertDialog = new AlertDialog.Builder(view.getContext()).create();
+                alertDialog.setTitle("Successful");
+                alertDialog.setMessage("Your Offer has been registered!");
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+
+                                MainActivity.fragmentManager.beginTransaction()
+                                        .replace(R.id.container, new OfferOverviewFragment())
+                                        .commit();
+                                dialog.dismiss();
+
+                            }
+                        });
+                alertDialog.show();
             }
         });
 
