@@ -23,16 +23,32 @@ public class OffersFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_offers, container,
                 false);
 
+        //Spinner Parking Size
         Spinner spinner = (Spinner) view.findViewById(R.id.spinner);
         List<String> list = new ArrayList<String>();
-        list.add("small");
-        list.add("normal");
-        list.add("big");
-        list.add("really big");
+        list.add("Small Parking Space");
+        list.add("Normal Parking Space");
+        list.add("Big Parking Space");
+        list.add("Very Big Parking Space");
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(view.getContext(),
                 android.R.layout.simple_spinner_item, list);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(dataAdapter);
+
+
+        //Spinner Offer type
+        Spinner spinner2 = (Spinner) view.findViewById(R.id.spinner_type);
+        List<String> list2 = new ArrayList<String>();
+        list2.add("Money");
+        list2.add("Morning Coffee");
+        list2.add("Beer");
+        list2.add("Coupon");
+        list2.add("Paying the current parking time");
+        list2.add("Others");
+        ArrayAdapter<String> dataAdapter2 = new ArrayAdapter<String>(view.getContext(),
+                android.R.layout.simple_spinner_item, list2);
+        dataAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner2.setAdapter(dataAdapter2);
 
         Button timeButton = (Button) view.findViewById(R.id.timeButton);
         timeButton.setOnClickListener(new View.OnClickListener() {
