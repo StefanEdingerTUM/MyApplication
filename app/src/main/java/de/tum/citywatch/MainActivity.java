@@ -50,7 +50,6 @@ public class MainActivity extends Activity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getFragmentManager();
         Fragment fragment=null;
-        //TODO::
         if (position == 0) {
             fragment = new ParkMapFragment();
         } else if (position == 1) {
